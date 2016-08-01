@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace robotgamedotnet
 {
-    public enum Action { Move = 1, Attack = 2, Suicide = 3, Guard = 4 };
-
     public class Board
     {
         public int size { get; set; }

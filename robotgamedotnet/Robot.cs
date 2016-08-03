@@ -11,8 +11,8 @@ namespace robotgamedotnet
         public Guid id { get; private set; }
         public Point location { get; private set; }
         public int hp { get; private set; }
-        protected Player player { get; private set; }
-        protected Board board { get; private set; }
+        public Player player { get; private set; }
+        public Board board { get; private set; }
 
         public abstract Action act();
     }

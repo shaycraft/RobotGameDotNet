@@ -17,7 +17,7 @@ namespace robotgamedotnet
 
         private Point[,] _grid;
 
-        private List<Robot> _robots;
+        public List<Robot> _robots { get; private set; }
         private List<Player> _players;
 
         // number of turns passed

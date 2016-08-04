@@ -10,6 +10,8 @@ namespace robotgamedotnet
     {
         static void Main(string[] args)
         {
+            Player player1 = new Player { id = Guid.NewGuid() };
+            Player player2 = new Player { id = Guid.NewGuid() };
         }
     }
 }

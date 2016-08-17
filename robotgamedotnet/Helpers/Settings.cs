@@ -9,13 +9,13 @@ namespace robotgamedotnet.Helpers
 {
     public static class Settings
     {
-        public static int spawn_every { get; }
-        public static int spawn_per_player { get; }
-        public static int robot_hp { get; }
-        public static int attack_range { get; }
-        public static int collision_damage { get; }
-        public static int suicide_damage { get; }
-        public static int max_turns { get; }
+        public static int spawn_every { get; private set; }
+        public static int spawn_per_player { get; private set; }
+        public static int robot_hp { get; private set; }
+        public static int attack_range { get; private set; }
+        public static int collision_damage { get; private set; }
+        public static int suicide_damage { get; private set; }
+        public static int max_turns { get; private set; }
 
         static Settings()
         {

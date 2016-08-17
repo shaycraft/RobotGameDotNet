@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace robotgamedotnet.Robots
 {
-    public class Wussy : Robot
+    public class WussyRobot : Robot
     {
         public override Action act()
         {

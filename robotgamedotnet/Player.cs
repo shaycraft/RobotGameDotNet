@@ -10,5 +10,11 @@ namespace robotgamedotnet
     {
         public Guid id { get; set; }
         public List<Robot> robots { get; set; }
+
+        public Player()
+        {
+            robots = new List<Robot>();
+        }
+
     }
 }

@@ -13,7 +13,11 @@ namespace robotgamedotnet
 
         public static bool operator ==(Point p1, Point p2)
         {
-            return p1.Equals(p2);
+            if (object.ReferenceEquals(p1, null) || object.ReferenceEquals(p2, null))
+            {
+                return false;
+            }
+            return p1.x == p2.x & p1.y == p2.y;
         }
 
         public static bool operator !=(Point p1, Point p2)

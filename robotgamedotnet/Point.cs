@@ -6,8 +6,30 @@ using System.Threading.Tasks;
 
 namespace robotgamedotnet
 {
+    public class PointComparer : IEqualityComparer<Point>
+    {
+        public bool Equals(Point p1, Point p2)
+        {
+            return (p1.x == p2.x && p1.y == p2.y);
+        }
+
+        public int GetHashCode(Point obj)
+        {
+            //return obj.x ^ obj.y;
+            return string.Format("{0},{1}", obj.x, obj.y).GetHashCode();
+        }
+    }
+
     public class Point
     {
+        public Point() { }
+
+        public Point(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+
         public int x { get; set; }
         public int y { get; set; }
 

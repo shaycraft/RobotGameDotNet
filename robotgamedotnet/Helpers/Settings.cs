@@ -16,6 +16,8 @@ namespace robotgamedotnet.Helpers
         public static int collision_damage { get; private set; }
         public static int suicide_damage { get; private set; }
         public static int max_turns { get; private set; }
+        public static int guard_damage { get; private set; } // look this up later, stupid fucking robotgame.net is down
+        public static int attack_damage { get; set; } // look this up later, stupid fucking robotgame.net is down
 
         static Settings()
         {
@@ -26,6 +28,8 @@ namespace robotgamedotnet.Helpers
             collision_damage = Int32.Parse(ConfigurationManager.AppSettings["COLLISION_DAMAGE"]);
             suicide_damage = Int32.Parse(ConfigurationManager.AppSettings["SUICIDE_DAMAGE"]);
             max_turns = Int32.Parse(ConfigurationManager.AppSettings["MAX_TURNS"]);
+            guard_damage = Int32.Parse(ConfigurationManager.AppSettings["GUARD_DAMAGE"]);
+            attack_damage = Int32.Parse(ConfigurationManager.AppSettings["ATTACK_DAMAGE"]);
         }
     }
 }

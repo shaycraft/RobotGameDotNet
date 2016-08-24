@@ -12,6 +12,7 @@ namespace robotgamedotnet
     {
         public ActionType Type { get; set; }
         // only used for move
-        public Point p { get; set; }
+        public Point AttackLocation { get; set; }
+        public Point MoveLocation { get; set; }
     }
 }

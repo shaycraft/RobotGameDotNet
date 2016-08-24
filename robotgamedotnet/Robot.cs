@@ -1,4 +1,5 @@
-﻿using System;
+﻿using robotgamedotnet.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace robotgamedotnet
     {
         public Guid id { get; private set; }
         public Point location { get; set; }
-        public int hp { get; private set; }
+        public int hp { get; set; }
         public Player player { get; set; }
         public Board board { get; set; }
 
@@ -20,6 +21,7 @@ namespace robotgamedotnet
         public Robot()
         {
             id = Guid.NewGuid();
+            hp = Settings.robot_hp;
         }
     }
 }
